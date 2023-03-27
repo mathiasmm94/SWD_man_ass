@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace Memento_MAN_ASS_SHOPPINGLIST
 {
-	internal class Memento
+	public class ShoppingListMemento
 	{
+		private readonly List<string> _items;
+
+		public ShoppingListMemento(List<string> items)
+		{
+			_items = new List<string>(items);
+		}
+
+		public List<string> GetItems()
+		{
+			return _items;
+		}
 	}
+
 }
