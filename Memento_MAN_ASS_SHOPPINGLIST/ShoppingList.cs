@@ -12,11 +12,11 @@ namespace Memento_MAN_ASS_SHOPPINGLIST
 
 		public void RemoveItem(string item);
 
+		public void PrintItems();
+
 		public ShoppingListMemento Save();
 
 		public void Restore(ShoppingListMemento memento);
-
-		public void PrintItems();
 	}
 
 	public class ShoppingList : IShoppingList

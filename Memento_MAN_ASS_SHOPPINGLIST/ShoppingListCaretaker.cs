@@ -9,9 +9,9 @@ namespace Memento_MAN_ASS_SHOPPINGLIST
 	public class ShoppingListCaretaker
 	{
 		private readonly Stack<ShoppingListMemento> _mementos = new Stack<ShoppingListMemento>();
-		private readonly ShoppingList _shoppingList;
+		private readonly IShoppingList _shoppingList;
 
-		public ShoppingListCaretaker(ShoppingList shoppingList)
+		public ShoppingListCaretaker(IShoppingList shoppingList)
 		{
 			_shoppingList = shoppingList;
 		}
