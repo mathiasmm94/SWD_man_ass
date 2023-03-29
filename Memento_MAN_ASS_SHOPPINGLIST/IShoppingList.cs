@@ -47,11 +47,17 @@ namespace Memento_MAN_ASS_SHOPPINGLIST
 		public void PrintItems()
 		{
 			Console.WriteLine("Shopping List:");
-			foreach (var item in _items)
-			{
-				Console.WriteLine(item);
-			}
-		}
+            for (int i = 0; i < _items.Count; i++)
+            {
+                Console.WriteLine($"{i} {_items[i]}");
+            }
+			//foreach (var item in _items)
+			//{
+			//	Console.WriteLine(item);
+   //         }
+            Console.WriteLine("_________________");
+            Console.WriteLine("");
+        }
 	}
 
 
