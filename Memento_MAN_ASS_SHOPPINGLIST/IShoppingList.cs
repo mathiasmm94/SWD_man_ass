@@ -19,7 +19,6 @@ namespace Memento_MAN_ASS_SHOPPINGLIST
 		public void Restore(ShoppingListMemento memento);
 	}
 
-	//HMMM
 	public class ShoppingList : IShoppingList
 	{
 		private List<string> _items = new List<string>();
